@@ -93,7 +93,7 @@ render()
 
 当被调用时，其应该检查`this.props` 和 `this.state`并返回一个单独的React元素。该元素可能是一个原生DOM组件的表示，如`<div />`，或者是一个你定义的合成组件。
 
-也也可以返回`null` 或 `false`来声明你并不想渲染任何东西。当返回`null` 或 `false`时，`ReactDOM.findDOMNode(this)` 将返回 `null`。
+也可以返回`null` 或 `false`来声明你并不想渲染任何东西。当返回`null` 或 `false`时，`ReactDOM.findDOMNode(this)` 将返回 `null`。
 
 `render()`函数应该纯净，意味着其不应该改变组件的状态，其每次调用都应返回相同的结果，同时不直接和浏览器交互。若需要和浏览器交互，将任务放在`componentDidMount()`阶段或其他的生命周期方法。保持`render()` 方法纯净使得组件更容易思考。
 
